@@ -1,6 +1,6 @@
 const TopBannerAd = () => {
   return (
-    <div className="bg-gray-800 h-24 flex items-center justify-center">
+    <div className="bg-sky-950 h-24 flex items-center justify-center">
       <iframe
         src="https://ads-partners.coupang.com/widgets.html?id=776155&template=carousel&trackingCode=AF1316385&subId=&width=970&height=96&tsource="
         width="970"

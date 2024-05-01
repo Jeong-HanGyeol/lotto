@@ -4,7 +4,7 @@ import Gnb from "./Gnb";
 const Header = () => {
   return (
     <header>
-      {/* <TopBannerAd /> */}
+      <TopBannerAd />
       <Gnb />
       <div></div>
     </header>
