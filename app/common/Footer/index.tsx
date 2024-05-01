@@ -3,7 +3,7 @@ import FooterBottom from "./FooterBottom";
 
 const Footer = () => {
   return (
-    <footer className="pt-24 pb-12 bg-blue-500">
+    <footer className="pt-24 pb-12 bg-transparent">
       <div className="w-[1080px] mx-auto">
         <FooterTop />
         <FooterBottom />
