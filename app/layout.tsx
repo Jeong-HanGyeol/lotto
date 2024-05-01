@@ -19,6 +19,9 @@ export const metadata: Metadata = {
     "로또 번호 생성기",
     "로또 1등 상금",
   ],
+  verification: {
+    google: "tFATRVSYguzkvSry8h8eUDsnPBpJ66f-vZsrefzajPU",
+  },
 };
 
 export default function RootLayout({
