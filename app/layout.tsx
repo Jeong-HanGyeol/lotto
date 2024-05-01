@@ -7,7 +7,7 @@ import Footer from "./common/Footer";
 const inter = Inter({ subsets: ["latin"] });
 
 export const metadata: Metadata = {
-  title: "로또 관련 웹 - 로또 자동 추첨기",
+  title: "로또 간편 추첨기",
   description:
     "로또 자동 추첨기, 당첨내역, 역대 당첨 번호 등 다양한 로또 관련 정보들을 확인할 수 있습니다!",
   keywords: [
