@@ -5,7 +5,7 @@ import Lnb from "./Lnb";
 const Header = () => {
   return (
     <header>
-      {/* <TopBannerAd /> */}
+      <TopBannerAd />
       <Gnb />
       <Lnb />
     </header>
