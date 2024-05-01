@@ -3,11 +3,12 @@ import { Inter } from "next/font/google";
 import "./globals.css";
 import Header from "./common/Header";
 import Footer from "./common/Footer";
+import Body from "./common/Body";
 
 const inter = Inter({ subsets: ["latin"] });
 
 export const metadata: Metadata = {
-  title: "로또 관련 웹 - 로또 자동 추첨기",
+  title: "로또 간편 추첨기",
   description:
     "로또 자동 추첨기, 당첨내역, 역대 당첨 번호 등 다양한 로또 관련 정보들을 확인할 수 있습니다!",
   keywords: [
@@ -18,6 +19,9 @@ export const metadata: Metadata = {
     "로또 번호 생성기",
     "로또 1등 상금",
   ],
+  verification: {
+    google: "tFATRVSYguzkvSry8h8eUDsnPBpJ66f-vZsrefzajPU",
+  },
 };
 
 export default function RootLayout({
@@ -27,10 +31,16 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body className="bg-blue-500">
+      <body>
         <Header />
-        {children}
-        <Footer />
+        <Body
+          children={
+            <>
+              {children}
+              <Footer />
+            </>
+          }
+        />
       </body>
     </html>
   );
