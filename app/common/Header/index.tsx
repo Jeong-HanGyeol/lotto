@@ -1,5 +1,13 @@
+import TopBannerAd from "./TopBannerAd";
+
 const Header = () => {
-  return <>헤더</>;
+  return (
+    <header>
+      <TopBannerAd />
+      <div></div>
+      <div></div>
+    </header>
+  );
 };
 
 export default Header;
