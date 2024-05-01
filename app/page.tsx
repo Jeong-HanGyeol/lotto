@@ -2,7 +2,7 @@ import NumCreate from "./automatic-lotto/NumCreate";
 
 export default function AutomaticLotto() {
   return (
-    <div className="">
+    <div className="bg-blue-500">
       <div className="w-[1080px] mx-auto ">
         <div className="pt-14 mb-12">
           <img
