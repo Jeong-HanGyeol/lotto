@@ -5,6 +5,12 @@ type AdSenseProps = {
   style: React.CSSProperties;
 };
 
+declare global {
+  interface Window {
+    adsbygoogle?: any[];
+  }
+}
+
 const AdSense: React.FC<AdSenseProps> = (props) => {
   useEffect(() => {
     try {
