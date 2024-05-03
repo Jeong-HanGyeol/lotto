@@ -1,6 +1,7 @@
 "use client";
 
 import { useState } from "react";
+import AdSense from "@/app/common/adBanner";
 
 const TopBannerAd = () => {
   const [adHide, setAdHide] = useState(false);
@@ -14,15 +15,16 @@ const TopBannerAd = () => {
         adHide ? "hidden" : "flex"
       }  bg-sky-950 h-24  items-center justify-center`}
     >
-      <iframe
-        src="https://ads-partners.coupang.com/widgets.html?id=776155&template=carousel&trackingCode=AF1316385&subId=&width=970&height=96&tsource="
-        width="970"
-        height="96"
-        // frameborder="0"
-        // scrolling="no"
-        // referrerpolicy="unsafe-url"
-        // browsingtopics
-      ></iframe>
+      <AdSense
+        data-ad-slot="1878644480"
+        style={{
+          display: "inline-block",
+          width: "960px",
+          height: "96px",
+          overflow: "hidden",
+        }}
+      />
+
       <button className="w-6 h-6 ml-2.5 " onClick={adCancel}>
         <svg
           xmlns="http://www.w3.org/2000/svg"
