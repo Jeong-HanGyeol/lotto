@@ -1,7 +1,7 @@
 "use client";
 
 import { useState } from "react";
-import AdSense from "@/app/common/adBanner";
+import AdSense from "@/app/common/components/AdSense";
 
 const TopBannerAd = () => {
   const [adHide, setAdHide] = useState(false);
