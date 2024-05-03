@@ -1,6 +1,11 @@
 import { useEffect } from "react";
 
-const AdSense = (props) => {
+type AdSenseProps = {
+  "data-ad-slot": string;
+  style: React.CSSProperties;
+};
+
+const AdSense: React.FC<AdSenseProps> = (props) => {
   useEffect(() => {
     try {
       (window.adsbygoogle = window.adsbygoogle || []).push({});
