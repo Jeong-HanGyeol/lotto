@@ -4,7 +4,7 @@ import MobileFooter from "./MobileFooter";
 
 const Footer = ({ mobile }: { mobile: boolean }) => {
   if (mobile) {
-    <MobileFooter />;
+    return <MobileFooter />;
   }
   return (
     <footer className="pt-24 pb-12 bg-blue-500">
