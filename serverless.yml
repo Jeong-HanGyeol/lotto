@@ -1,0 +1,7 @@
+myNextApplication:
+  component: "@sls-next/serverless-component"
+  inputs:
+    cloudfront:
+      defaults:
+        forward:
+          headers: ["User-Agent"]

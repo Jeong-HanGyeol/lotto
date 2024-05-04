@@ -26,7 +26,8 @@
     "**/*.ts",
     "**/*.tsx",
     ".next/types/**/*.ts",
-    "app/common/Header/MobileHeader"
+    "app/common/Header/MobileHeader",
+    "server.js"
   ],
   "exclude": ["node_modules"]
 }
