@@ -6,14 +6,15 @@ import MobileHeader from "./MobileHeader";
 const Header = ({ mobile }: { mobile: boolean }) => {
   if (mobile) {
     return <MobileHeader />;
+  } else {
+    return (
+      <header>
+        <TopBannerAd />
+        <Gnb />
+        <Lnb />
+      </header>
+    );
   }
-  return (
-    <header>
-      <TopBannerAd />
-      <Gnb />
-      <Lnb />
-    </header>
-  );
 };
 
 export default Header;
