@@ -1,6 +1,14 @@
+import MHome from "./MHome";
 import NumCreate from "./automatic-lotto/NumCreate";
+import { isMobileDevice } from "@/libs/responsive";
 
-export default function AutomaticLotto() {
+export default function Home() {
+  const mobile = isMobileDevice();
+
+  if (mobile) {
+    return <MHome />;
+  }
+
   return (
     <div className="bg-blue-500">
       <div className="w-[1080px] mx-auto ">

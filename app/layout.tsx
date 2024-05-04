@@ -3,6 +3,9 @@ import { Inter } from "next/font/google";
 import "./globals.css";
 import Header from "./common/Header";
 import Footer from "./common/Footer";
+import { isMobileDevice } from "@/libs/responsive";
+import MobileHeader from "./common/Header/MobileHeader";
+import MobileFooter from "./common/Footer/MobileFooter";
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -28,6 +31,10 @@ export default function RootLayout({
 }: Readonly<{
   children: React.ReactNode;
 }>) {
+  const mobile = isMobileDevice();
+
+  console.log("=====>", mobile);
+
   return (
     <html lang="ko">
       <head>
@@ -44,9 +51,9 @@ export default function RootLayout({
         ></script>
       </head>
       <body>
-        <Header />
+        {mobile ? <MobileHeader /> : <Header />}
         {children}
-        <Footer />
+        {mobile ? <MobileFooter /> : <Footer />}
       </body>
     </html>
   );
