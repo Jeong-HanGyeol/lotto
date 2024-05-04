@@ -1,6 +1,6 @@
 import NumCreate from "./automatic-lotto/NumCreate";
 
-export default function AutomaticLotto() {
+export default function Home() {
   return (
     <div className="bg-blue-500">
       <div className="w-[1080px] mx-auto ">
