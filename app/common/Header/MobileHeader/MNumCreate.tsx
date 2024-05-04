@@ -70,14 +70,14 @@ const MNumCreate = () => {
   };
 
   return (
-    <div className="bg-white rounded-full h-10 shadow-md flex items-center justify-between px-7">
+    <div className="bg-white rounded-full h-10 shadow-md flex items-center justify-between px-4">
       <div className="flex items-center">
-        <div className="pr-8 text-sm font-bold border-r border-gray-200">
+        <div className="pr-2 text-sm font-bold border-r border-gray-200">
           <p>{newRound}회</p>
         </div>
       </div>
-      <div className="flex items-center justify-center mx-4 gap-4">
-        <div className="flex gap-2 items-center">
+      <div className="flex items-center justify-center mx-auto gap-2">
+        <div className="flex gap-1 items-center">
           {randomNumbers.map((num, i) => (
             <Ball num={num} key={String(num) + i} />
           ))}
@@ -85,7 +85,7 @@ const MNumCreate = () => {
         {randomNumbers.length > 0 ? (
           <button
             type="button"
-            className="text-sm text-gray-400"
+            className="text-xs text-gray-400"
             onClick={copyToClipboard}
           >
             복사
@@ -95,7 +95,7 @@ const MNumCreate = () => {
 
       <button
         type="button"
-        className="text-lg font-extrabold text-blue-500"
+        className="text-sm font-extrabold text-blue-500"
         onClick={generateRandomNumbers}
       >
         번호 생성
@@ -121,7 +121,7 @@ const Ball = ({ num }: { num: number }) => {
 
   return (
     <span
-      className={`${getColor()} flex justify-center items-center text-white w-7 h-7 rounded-full text-sm`}
+      className={`${getColor()} flex justify-center items-center text-white w-6 h-6 rounded-full text-xs`}
     >
       {num}
     </span>
