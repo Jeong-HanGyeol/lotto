@@ -5,6 +5,7 @@ import Header from "./common/Header";
 import Footer from "./common/Footer";
 import { isMobileDevice } from "@/libs/responsive";
 import MobileHeader from "./common/Header/MobileHeader";
+import MobileFooter from "./common/Footer/MobileFooter";
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -51,8 +52,8 @@ export default function RootLayout({
       </head>
       <body>
         {mobile ? <MobileHeader /> : <Header />}
-        {mobile ? null : children}
-        {mobile ? null : <Footer />}
+        {children}
+        {mobile ? <MobileFooter /> : <Footer />}
       </body>
     </html>
   );
