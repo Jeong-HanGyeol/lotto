@@ -9,7 +9,7 @@ const MLnbMenuItem = ({ title, link }: { title: string; link: string }) => {
   const active = pathname === link ? true : false;
 
   return (
-    <li className="inline-block">
+    <li className="inline-block first-of-type:ml-0 ml-6">
       <Link href={link}>
         <div
           className={`${
