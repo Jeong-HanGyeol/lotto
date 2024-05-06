@@ -1,6 +1,7 @@
 "use client";
 
 import { useEffect, useState } from "react";
+import { SmallBall } from "../../components/Ball";
 
 const MNumCreate = () => {
   const [randomNumbers, setRandomNumbers] = useState<number[]>([]);
@@ -79,7 +80,7 @@ const MNumCreate = () => {
       <div className="flex items-center justify-center mx-auto gap-2">
         <div className="flex gap-1 items-center">
           {randomNumbers.map((num, i) => (
-            <Ball num={num} key={String(num) + i} />
+            <SmallBall num={num} key={String(num) + i} />
           ))}
         </div>
         {randomNumbers.length > 0 ? (
@@ -101,30 +102,6 @@ const MNumCreate = () => {
         번호 생성
       </button>
     </div>
-  );
-};
-
-const Ball = ({ num }: { num: number }) => {
-  const getColor = () => {
-    if (num >= 1 && num <= 10) {
-      return "bg-yellow-500";
-    } else if (num >= 11 && num <= 20) {
-      return "bg-blue-500";
-    } else if (num >= 21 && num <= 30) {
-      return "bg-red-500";
-    } else if (num >= 31 && num <= 40) {
-      return "bg-gray-500";
-    } else {
-      return "bg-green-500";
-    }
-  };
-
-  return (
-    <span
-      className={`${getColor()} flex justify-center items-center text-white w-6 h-6 rounded-full text-xs`}
-    >
-      {num}
-    </span>
   );
 };
 

@@ -5,10 +5,10 @@ import {
   getLottoRound,
   getRandomNumbers,
   copyToClipboard,
-} from "../common/util/func";
-import { Ball } from "../common/components/Ball";
+} from "../../common/util/func";
+import { SmallBall } from "../../common/components/Ball";
 
-const ExcludingNumber = () => {
+const MExcludingNumber = () => {
   const [exclude, setExclude] = useState<number[]>([]);
 
   const [randomNumbers, setRandomNumbers] = useState<number[]>([]);
@@ -27,15 +27,15 @@ const ExcludingNumber = () => {
 
   return (
     <div>
-      <div className="w-[1080px] rounded bg-white mx-auto mt-2">
+      <div className="w-full rounded bg-white mx-auto mt-2">
         <div className="rounded-t flex border-gray-300 border-b justify-between">
           <h2 className="py-2 px-3 text-gray-900 text-sm font-medium">
             조합에서 제외할 번호
           </h2>
         </div>
-        <div className="p-3 flex justify-center flex-col items-center gap-8 ">
-          <ul className="flex gap-2.5 flex-wrap justify-center flex-col items-start">
-            <li className="flex gap-2.5">
+        <div className="py-3 px-4 flex justify-center flex-col items-center gap-8 ">
+          <ul className="flex gap-1 flex-wrap justify-center flex-col items-start">
+            <li className="flex gap-1">
               <NumberBtn setExclude={setExclude} exclude={exclude} number={1} />
               <NumberBtn setExclude={setExclude} exclude={exclude} number={2} />
               <NumberBtn setExclude={setExclude} exclude={exclude} number={3} />
@@ -43,6 +43,8 @@ const ExcludingNumber = () => {
               <NumberBtn setExclude={setExclude} exclude={exclude} number={5} />
               <NumberBtn setExclude={setExclude} exclude={exclude} number={6} />
               <NumberBtn setExclude={setExclude} exclude={exclude} number={7} />
+            </li>
+            <li className="flex gap-1">
               <NumberBtn setExclude={setExclude} exclude={exclude} number={8} />
               <NumberBtn setExclude={setExclude} exclude={exclude} number={9} />
               <NumberBtn
@@ -50,8 +52,6 @@ const ExcludingNumber = () => {
                 exclude={exclude}
                 number={10}
               />
-            </li>
-            <li className="flex gap-2.5">
               <NumberBtn
                 setExclude={setExclude}
                 exclude={exclude}
@@ -72,6 +72,8 @@ const ExcludingNumber = () => {
                 exclude={exclude}
                 number={14}
               />
+            </li>
+            <li className="flex gap-1">
               <NumberBtn
                 setExclude={setExclude}
                 exclude={exclude}
@@ -102,13 +104,13 @@ const ExcludingNumber = () => {
                 exclude={exclude}
                 number={20}
               />
-            </li>
-            <li className="flex gap-2.5">
               <NumberBtn
                 setExclude={setExclude}
                 exclude={exclude}
                 number={21}
               />
+            </li>
+            <li className="flex gap-1">
               <NumberBtn
                 setExclude={setExclude}
                 exclude={exclude}
@@ -144,6 +146,8 @@ const ExcludingNumber = () => {
                 exclude={exclude}
                 number={28}
               />
+            </li>
+            <li className="flex gap-1">
               <NumberBtn
                 setExclude={setExclude}
                 exclude={exclude}
@@ -154,8 +158,6 @@ const ExcludingNumber = () => {
                 exclude={exclude}
                 number={30}
               />
-            </li>
-            <li className="flex gap-2.5">
               <NumberBtn
                 setExclude={setExclude}
                 exclude={exclude}
@@ -181,6 +183,8 @@ const ExcludingNumber = () => {
                 exclude={exclude}
                 number={35}
               />
+            </li>
+            <li className="flex gap-1">
               <NumberBtn
                 setExclude={setExclude}
                 exclude={exclude}
@@ -206,8 +210,6 @@ const ExcludingNumber = () => {
                 exclude={exclude}
                 number={40}
               />
-            </li>
-            <li className="flex gap-2.5">
               <NumberBtn
                 setExclude={setExclude}
                 exclude={exclude}
@@ -218,6 +220,8 @@ const ExcludingNumber = () => {
                 exclude={exclude}
                 number={42}
               />
+            </li>
+            <li className="flex gap-1">
               <NumberBtn
                 setExclude={setExclude}
                 exclude={exclude}
@@ -235,20 +239,20 @@ const ExcludingNumber = () => {
               />
             </li>
           </ul>
-          <div className="relative flex px-4 h-14 py-2 border border-blue-500 rounded w-[570px] justify-between items-center">
-            <div className="pr-4 text-base font-bold border-r border-gray-200">
+          <div className="relative flex px-4 h-12 py-2 border border-blue-500 rounded w-full justify-between items-center">
+            <div className="pr-2 text-sm font-bold border-r border-gray-200">
               <p>{getLottoRound() + 1}회</p>
             </div>
-            <div className="flex gap-4">
-              <div className="flex gap-3">
+            <div className="flex gap-2">
+              <div className="flex gap-1">
                 {randomNumbers.map((num, i) => (
-                  <Ball num={num} key={String(num) + i} />
+                  <SmallBall num={num} key={String(num) + i} />
                 ))}
               </div>
               {randomNumbers.length > 0 ? (
                 <button
                   type="button"
-                  className="text-sm text-gray-400"
+                  className="text-xs text-gray-400"
                   onClick={() => copyToClipboard(copiedNumbers)}
                 >
                   복사
@@ -257,7 +261,7 @@ const ExcludingNumber = () => {
             </div>
             <button
               type="button"
-              className=" text-xl font-extrabold text-blue-500"
+              className=" text-sm font-extrabold text-blue-500"
               onClick={generateRandomNumbers}
             >
               번호 생성
@@ -301,11 +305,11 @@ const NumberBtn: React.FC<NumberBtnProps> = ({
         exclude.includes(number)
           ? "bg-blue-500 text-white hover:bg-blue-400"
           : "bg-gray-200 text-gray-500 hover:border-blue-500"
-      } w-12 h-12 flex items-center justify-center border-2  rounded text-2xl font-bold`}
+      } w-10 h-10 flex items-center justify-center border-2  rounded text-xl font-bold`}
     >
       {number}
     </button>
   );
 };
 
-export default ExcludingNumber;
+export default MExcludingNumber;
