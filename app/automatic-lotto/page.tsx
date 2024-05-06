@@ -1,6 +1,7 @@
 import ContentHeader from "./ContentHeader";
 import BannerContainer from "./BannerContainer";
 import ExcludingNumber from "./ExcludingNumber";
+import BottomBanner from "./BottomBanner";
 
 const AutomaticLotto = () => {
   return (
@@ -8,6 +9,7 @@ const AutomaticLotto = () => {
       <ContentHeader />
       <BannerContainer />
       <ExcludingNumber />
+      <BottomBanner />
     </div>
   );
 };
