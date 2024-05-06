@@ -303,8 +303,8 @@ const NumberBtn: React.FC<NumberBtnProps> = ({
       onClick={numberClick}
       className={`${
         exclude.includes(number)
-          ? "bg-blue-500 text-white hover:bg-blue-400"
-          : "bg-gray-200 text-gray-500 hover:border-blue-500"
+          ? "bg-blue-500 text-white"
+          : "bg-gray-200 text-gray-500"
       } w-10 h-10 flex items-center justify-center border-2  rounded text-xl font-bold`}
     >
       {number}
