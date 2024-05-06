@@ -1,5 +1,5 @@
 import MHome from "./MHome";
-import NumCreate from "./automatic-lotto/NumCreate";
+import NumCreate from "./NumCreate";
 import { isMobileDevice } from "@/libs/responsive";
 
 export default function Home() {
