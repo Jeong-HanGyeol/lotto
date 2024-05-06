@@ -6,7 +6,7 @@ const Lnb = () => {
       <nav className="flex w-[1080px] items-center justify-between">
         <ul className="flex gap-6 items-center">
           <LnbMenuItem title="홈" link="/" />
-          <LnbMenuItem title="로또 자동 추첨기" link="/automatic-lotto" />
+          <LnbMenuItem title="로또 자동 생성기" link="/automatic-lotto" />
         </ul>
       </nav>
     </div>

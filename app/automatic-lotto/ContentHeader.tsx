@@ -5,7 +5,7 @@ const ContentHeader = () => {
         <div>
           <div className="mt-4 mb-3 ">
             <h1 className="flex items-center flex-wrap text-gray-900 text-base font-bold">
-              로또 자동 추출기
+              로또 자동 생성기
             </h1>
             <p className="text-gray-500 mt-2.5 text-xs break-words whitespace-pre-line">
               로또 번호 자동 추출기입니다. <br />

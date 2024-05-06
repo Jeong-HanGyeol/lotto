@@ -1,6 +1,11 @@
 import MHome from "./MHome";
 import NumCreate from "./NumCreate";
 import { isMobileDevice } from "@/libs/responsive";
+import { Metadata } from "next";
+
+export const metadata: Metadata = {
+  title: "로또간편추첨기 - JEONG G",
+};
 
 export default function Home() {
   const mobile = isMobileDevice();
