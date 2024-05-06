@@ -8,7 +8,11 @@ import { isMobileDevice } from "@/libs/responsive";
 const inter = Inter({ subsets: ["latin"] });
 
 export const metadata: Metadata = {
-  title: "로또 간편 추첨기",
+  title: {
+    absolute: "",
+    default: "",
+    template: "%s - JEONG G",
+  },
   description:
     "로또 자동 추첨기, 당첨내역, 역대 당첨 번호 등 다양한 로또 관련 정보들을 확인할 수 있습니다!",
   keywords: [
@@ -17,6 +21,7 @@ export const metadata: Metadata = {
     "로또 자동 추출기",
     "로또 번호 추출기",
     "로또 번호 생성기",
+    "로또 자동 생성기",
     "로또 1등 상금",
   ],
   verification: {
