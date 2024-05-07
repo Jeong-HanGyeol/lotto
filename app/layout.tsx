@@ -28,6 +28,23 @@ export const metadata: Metadata = {
       "naver-site-verification": ["79d9fe3c6e681ab43ece54ab664879333fd656c1"],
     },
   },
+  openGraph: {
+    siteName: "JEONG G",
+    images: [
+      {
+        url: "https://www.jeongg.com/og.png",
+        width: 800,
+        height: 600,
+      },
+      {
+        url: "https://www.jeongg.com/og-alt.png",
+        width: 1800,
+        height: 1600,
+        alt: "My custom alt",
+      },
+    ],
+    type: "website",
+  },
 };
 
 export default function RootLayout({
