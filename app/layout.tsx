@@ -30,19 +30,6 @@ export const metadata: Metadata = {
   },
   openGraph: {
     siteName: "JEONG G",
-    images: [
-      {
-        url: "https://www.jeongg.com/og.png",
-        width: 800,
-        height: 600,
-      },
-      {
-        url: "https://www.jeongg.com/og-alt.png",
-        width: 1800,
-        height: 1600,
-        alt: "My custom alt",
-      },
-    ],
     type: "website",
   },
 };
@@ -57,6 +44,8 @@ export default function RootLayout({
   return (
     <html lang="ko">
       <head>
+        <meta property="og:image" content="https://www.jeongg.com/og.png" />
+
         <script
           async
           custom-element="amp-ad"
