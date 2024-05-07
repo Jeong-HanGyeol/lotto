@@ -13,8 +13,6 @@ export const metadata: Metadata = {
     default: "",
     template: "%s - JEONG G",
   },
-  description:
-    "로또 자동 추첨기, 당첨내역, 역대 당첨 번호 등 다양한 로또 관련 정보들을 확인할 수 있습니다!",
   keywords: [
     "lotto",
     "로또 자동 추첨",
@@ -26,6 +24,9 @@ export const metadata: Metadata = {
   ],
   verification: {
     google: "tFATRVSYguzkvSry8h8eUDsnPBpJ66f-vZsrefzajPU",
+    other: {
+      "naver-site-verification": ["79d9fe3c6e681ab43ece54ab664879333fd656c1"],
+    },
   },
 };
 

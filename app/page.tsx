@@ -5,6 +5,8 @@ import { Metadata } from "next";
 
 export const metadata: Metadata = {
   title: "로또간편추첨기 - JEONG G",
+  description:
+    "로또번호 간편 생성기입니다. 버튼을 눌러 간편하게 6개의 숫자 조합을 만들어 볼 수 있습니다. 뿐만 아니라 다양한 로또 관련 정보들을 얻어 가세요!",
 };
 
 export default function Home() {
