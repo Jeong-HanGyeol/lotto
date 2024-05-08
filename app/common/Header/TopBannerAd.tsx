@@ -2,6 +2,7 @@
 
 import { useState } from "react";
 import AdSense from "@/app/common/components/AdSense";
+import KakaoAdFit from "../components/KakaoAdFit";
 
 const TopBannerAd = () => {
   const [adHide, setAdHide] = useState(false);
@@ -15,7 +16,7 @@ const TopBannerAd = () => {
         adHide ? "hidden" : "flex"
       }  bg-sky-950 h-24  items-center justify-center`}
     >
-      <AdSense
+      {/* <AdSense
         data-ad-slot="1878644480"
         style={{
           display: "inline-block",
@@ -23,6 +24,13 @@ const TopBannerAd = () => {
           height: "96px",
           overflow: "hidden",
         }}
+      /> */}
+
+      <KakaoAdFit
+        width="728"
+        height="90"
+        id="DAN-twoT4t4oP430BQwh"
+        name="headerBanner"
       />
 
       <button className="w-6 h-6 ml-2.5 " onClick={adCancel}>
