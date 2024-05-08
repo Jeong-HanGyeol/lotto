@@ -11,7 +11,7 @@ export const metadata: Metadata = {
   title: {
     absolute: "",
     default: "",
-    template: "%s - JEONG G",
+    // template: "%s - JEONG G",
   },
   keywords: [
     "lotto",
