@@ -7,6 +7,7 @@ import { isMobileDevice } from "@/libs/responsive";
 import MContentHeader from "./mobile/MContentHeader";
 import MExcludingNumber from "./mobile/MExcludingNumber";
 import MBannerContainer from "./mobile/MBannerContainer";
+import { RightSideAd, LeftSideAd } from "./SideAd";
 
 export const metadata: Metadata = {
   title: "로또자동생성기",
@@ -27,10 +28,15 @@ const AutomaticLotto = () => {
     <div className="bg-gray-200">
       {mobile ? <MContentHeader /> : <ContentHeader />}
 
-      {mobile ? <MBannerContainer /> : <BannerContainer />}
+      <div className="relative">
+        {mobile ? null : <LeftSideAd />}
+        {mobile ? null : <RightSideAd />}
 
-      {mobile ? <MExcludingNumber /> : <ExcludingNumber />}
-      <BottomBanner />
+        {mobile ? <MBannerContainer /> : <BannerContainer />}
+
+        {mobile ? <MExcludingNumber /> : <ExcludingNumber />}
+        <BottomBanner />
+      </div>
     </div>
   );
 };
