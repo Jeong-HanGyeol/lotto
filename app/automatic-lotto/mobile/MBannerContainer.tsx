@@ -6,7 +6,7 @@ const MBannerContainer = () => {
       <KakaoAdFit
         width="320"
         height="100"
-        id="DAN-L4Ah0eYJTml0SAjq"
+        id="DAN-RvNyeAFjVxBFr1oe"
         name="middleBannerM"
       />
     </div>
