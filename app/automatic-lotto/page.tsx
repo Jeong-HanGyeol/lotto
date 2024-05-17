@@ -1,7 +1,7 @@
 import ContentHeader from "./ContentHeader";
 import BannerContainer from "./BannerContainer";
 import ExcludingNumber from "./ExcludingNumber";
-import BottomBanner from "./BottomBanner";
+import { BottomBanner, MBottomBanner } from "../common/components/BottomBanner";
 import { Metadata } from "next";
 import { isMobileDevice } from "@/libs/responsive";
 import MContentHeader from "./mobile/MContentHeader";
@@ -35,7 +35,8 @@ const AutomaticLotto = () => {
         {mobile ? <MBannerContainer /> : <BannerContainer />}
 
         {mobile ? <MExcludingNumber /> : <ExcludingNumber />}
-        <BottomBanner />
+
+        {mobile ? <MBottomBanner /> : <BottomBanner />}
       </div>
     </div>
   );

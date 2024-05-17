@@ -2,6 +2,7 @@ import MHome from "./MHome";
 import NumCreate from "./NumCreate";
 import { isMobileDevice } from "@/libs/responsive";
 import { Metadata } from "next";
+import { BottomBanner } from "./common/components/BottomBanner";
 
 export const metadata: Metadata = {
   title: "로또간편추첨기",
@@ -40,7 +41,7 @@ export default function Home() {
           <PremiumBanner />
         </div>
 
-        <Ad />
+        <BottomBanner />
       </div>
     </div>
   );
@@ -53,22 +54,6 @@ const PremiumBanner = () => {
         src="https://ads-partners.coupang.com/widgets.html?id=776177&template=carousel&trackingCode=AF1316385&subId=&width=431&height=60&tsource="
         width="431"
         height="60"
-        // frameborder="0"
-        // scrolling="no"
-        // referrerpolicy="unsafe-url"
-        // browsingtopics
-      ></iframe>
-    </div>
-  );
-};
-
-const Ad = () => {
-  return (
-    <div className="w-full min-h-[250px] mt-6 flex max-w-[1080px] mx-auto bg-white py-2 rounded-md items-center justify-center">
-      <iframe
-        src="https://ads-partners.coupang.com/widgets.html?id=776178&template=carousel&trackingCode=AF1316385&subId=&width=728&height=200&tsource="
-        width="728"
-        height="200"
         // frameborder="0"
         // scrolling="no"
         // referrerpolicy="unsafe-url"
