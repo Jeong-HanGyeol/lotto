@@ -1,13 +1,16 @@
-import KakaoAdFit from "../common/components/KakaoAdFit";
+import AdSense from "@/app/common/components/AdSense";
 
 export const LeftSideAd = () => {
   return (
     <div className="absolute left-1/2 -translate-x-[750px] overflow-hidden flex items-center w-[160px]">
-      <KakaoAdFit
-        width="160"
-        height="600"
-        id="DAN-LcgnTsLAx0hpRw9I"
-        name="leftSideAd"
+      <AdSense
+        data-ad-slot="4988033299"
+        style={{
+          display: "inline-block",
+          width: "300px",
+          height: "600px",
+          overflow: "hidden",
+        }}
       />
     </div>
   );
@@ -16,11 +19,14 @@ export const LeftSideAd = () => {
 export const RightSideAd = () => {
   return (
     <div className="absolute right-1/2 translate-x-[750px] overflow-hidden flex items-center w-[160px]">
-      <KakaoAdFit
-        width="160"
-        height="600"
-        id="DAN-dkwfFr6RDLv9Bawm"
-        name="rightSideAd"
+      <AdSense
+        data-ad-slot="3251359925"
+        style={{
+          display: "inline-block",
+          width: "300px",
+          height: "600px",
+          overflow: "hidden",
+        }}
       />
     </div>
   );
