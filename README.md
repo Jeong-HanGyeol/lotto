@@ -1,0 +1,2 @@
+# lotto
+JJabda Project Lotto
