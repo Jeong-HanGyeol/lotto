@@ -436,10 +436,10 @@
   resolved "https://registry.yarnpkg.com/@img/sharp-win32-x64/-/sharp-win32-x64-0.34.5.tgz#a81ffb00e69267cd0a1d626eaedb8a8430b2b2f8"
   integrity sha512-+29YMsqY2/9eFEiW93eqWnuLcWcufowXewwSNIT6UwZdUUCrM3oFjMWH/Z6/TMmb4hlFenmfAVbpWeup2jryCw==
 
-"@jeong-hangyeol/jjabda-ui@^0.1.0":
-  version "0.1.0"
-  resolved "https://npm.pkg.github.com/download/@jeong-hangyeol/jjabda-ui/0.1.0/885cfb4d3cf5156cf06171c1619a091590f4699b#885cfb4d3cf5156cf06171c1619a091590f4699b"
-  integrity sha512-euV3IBUNl9Dg38pcHcbGfxuOj8Pl+HDcIp+ww1OZjbc6Jvt7mU3bKfEooLoOElkOli2YTCfh133Yllb/B2bHRA==
+"@jeong-hangyeol/jjabda-ui@^0.4.0":
+  version "0.4.0"
+  resolved "https://npm.pkg.github.com/download/@jeong-hangyeol/jjabda-ui/0.4.0/68e9d8544016a13c841ce78b1e6c6952745d640c#68e9d8544016a13c841ce78b1e6c6952745d640c"
+  integrity sha512-l66zPj+CaTSu4iUJIDkUj7Bk04pUIQi0JtHGbi3X2Tnd3PZUfO/zglkZTheciPfmD4cGqYFBd5UNDeVYyQpJSg==
   dependencies:
     next "16.2.9"
     react "19.2.4"
