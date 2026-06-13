@@ -1,5 +1,5 @@
 import type { Metadata } from "next";
-import { Header, Footer } from "@jeong-hangyeol/jjabda-ui";
+import { Header, Footer,Navbar } from "@jeong-hangyeol/jjabda-ui";
 import "./globals.css";
 
 export const metadata: Metadata = {
@@ -19,6 +19,13 @@ export default function RootLayout({
     >
       <body className="min-h-full flex flex-col">
           <Header />
+          <Navbar
+            color="#5383E8"
+            links={[
+              { href: "/", label: "홈" },
+              { href: "/automatic-lotto", label: "로또 자동생성기" },
+            ]}
+          />
           <main className="flex flex-1 flex-col">{children}</main>
           <Footer />
         </body>
